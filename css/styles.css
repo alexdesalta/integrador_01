@@ -1,0 +1,360 @@
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); 
+
+/* Adobe font */
+@import url('https://use.typekit.net/sdb6jnq.css');
+
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --orange: #FF630A;
+    --gray: #2C2C2C;
+} /* variables*/
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML y Body por defecto */
+html{ 
+        background-color: var(--black); 
+    } 
+
+body {
+    min-height: 100vh;
+    max-width: 1440px;
+    background-color: var(--orange); 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    color: var(--white);
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/* UL Config */
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* DIVs configuración */
+.div-nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.div-left {
+    float: left; 
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.div-yor{
+    display: flex;
+    align-items: center;
+}
+
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    background-image: url('../images/portada01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.h2{
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.title{
+    font-size: 6em;
+    color: var(--white);
+}
+
+.subtitle{
+    font-size: 4em;
+    font-weight: 400;
+}
+
+ 
+.title-animated{
+    font-size: 6em;
+    color: var(--white);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s infinite;
+}
+
+@keyframes typing{
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+  
+
+
+.button-big {
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.button-big-black {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.button-big-white {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    box-sizing: border-box;
+  }
+  
+
+
+
+/* Contenedores para imagenes y textos  */
+.section{
+    text-align: center;
+    padding: 20px;
+}
+
+.section-black{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--black);
+}
+
+
+.paragraph{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.content{
+    margin-bottom: 20px;
+}
+  
+.rect-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+  
+.rectangle{
+    width: calc(33.33% - 30px);
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--black);
+}
+
+.rectangle-orange{
+    width: calc(33.33% - 30px);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--orange);
+}
+  
+.rectangle img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 300px;
+    margin: 25px;
+    display: inline-block;
+    text-align: center;
+    background: var(--black);
+    padding: 15px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+  
+.container-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.container-orange {
+    width: 300px;
+    margin: 25px;
+    display: inline-block;
+    text-align: center;
+    background: var(--orange);
+    padding: 15px;
+}
+  
+.container-orange img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.about{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 150vh;
+    background-image: url('../images/hika-chan.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+  
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+      height: 100vh;
+    }
+
+    .about{
+        height: 100vh;
+    }
+
+    .title-animated{
+        font-size: 3rem;
+        color: var(--white);
+    }
+
+    .title{
+        font-size: 3rem;
+        color: var(--white);
+    }
+
+    .subtitle{
+        font-size: 1.5em;
+    }
+
+    .paragraph{
+        font-size: 1.2rem;
+    }
+
+    .div-left {
+        float: left; 
+        width: 100%; 
+        max-width: 500px; 
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .button-big {
+        font-weight: 200;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .rect-container {
+        flex-wrap: wrap;
+      }
+    
+      .rectangle{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      } 
+
+      .rectangle-orange{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      } 
+
+      .button-big-black {
+        font-weight: 200;
+        display: inline-block;
+        padding: 6px 12px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .button-big-white {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
+        display: inline-block;
+        background-color: var(--white);
+        color: var(--black);
+        padding: 6px 12px;
+        text-align: center;
+        font-size: 1rem;
+    }
+   
+}

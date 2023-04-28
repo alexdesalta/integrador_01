@@ -1,0 +1,160 @@
+<!-- diseñar todo de nuevo para 420px de ancho minimo -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ----- Bootstrap ----- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ----- Setting Propios ----- -->
+    <link rel="stylesheet" href="css/styles.css">    
+    
+    <title>Integrador 01</title>
+</head>
+
+<body>
+    <!-- ----- Navbar ----- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Codo a Codo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#cosplay">Cosplays</a>
+                    <a class="nav-link" href="#calendar">Calendario</a>
+                    <a class="nav-link" href="#about">Acerca</a>
+                    <a class="nav-link" href="#network">Redes</a>
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ----- End Navbar ----- -->
+    
+    <!-- ----- Header -----     -->
+    <header class="header">
+            <div class="div-left">
+                <h1 class="title-animated">Hika</h1>
+                <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui non nisi mollitia! Cumque dolorum rem a quis voluptatibus.</p> <br>
+                <a href="#" class="button-big">REGISTRARSE</a>
+            </div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                const titleElement = document.querySelector(".title-animated");
+                const titles = ["Hika", "Cosplay", "Model"];
+                let currentIndex = 0;
+            
+                setInterval(() => {
+                  currentIndex = (currentIndex + 1) % titles.length;
+                  titleElement.textContent = titles[currentIndex];
+                }, 4000);
+              });
+            </script>
+    </header>
+    <!-- ----- End Header ----- -->
+
+    <!-- ----- Cosplay ----- -->
+    <section class="section" id="cosplay">
+        <div class="content">
+          <h class="subtitle">COSPLAYER/MODEL</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis eos, odit nesciunt minima aliquid accusamus at magnam reiciendis nisi amet dolorem qui vel voluptates pariatur, veritatis molestiae explicabo autem!</p>
+        </div>
+        <div class="rect-container">
+          <div class="rectangle">
+            <img src="/images/div01.jpg" alt="Imagen 1"><br>
+            <h3>Yor</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+          </div>
+          <div class="rectangle">
+            <img src="/images/div02.jpg" alt="Imagen 2"><br>
+            <h3>Samus Aram</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+          </div>
+          <div class="rectangle">
+            <img src="/images/div03.jpg" alt="Imagen 3"><br>
+            <h3>Evelynn</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+          </div>
+        </div>
+      </section>
+      <!-- ----- End Cosplay ----- -->
+
+    <!-- ----- Calendar ----- -->
+    <section class="section-black" id="calendar">
+        <div class="content">
+          <h class="subtitle">CALENDARIO</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis eos, odit nesciunt minima aliquid accusamus at magnam reiciendis nisi amet dolorem qui vel voluptates pariatur, veritatis molestiae explicabo autem!</p>
+        </div>
+        <div class="rect-container">
+          <div class="rectangle-orange">
+            <img src="/images/escarapela.png" alt="Imagen 1"><br>
+            <br><h3>DIMENSION COMICS</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+            <br><a href="#" class="button-big-black">16-Jul</a><br>
+          </div>
+          <div class="rectangle-orange">
+            <img src="/images/escarapela.png" alt="Imagen 2"><br>
+            <br><h3>COMIC CON</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+            <br><a href="#" class="button-big-black">4-Ago</a><br>
+          </div>
+          <div class="rectangle-orange">
+            <img src="/images/escarapela.png" alt="Imagen 3"><br>
+            <br><h3>EXPO GAMES</h3><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+            <br><a href="#" class="button-big-black">12-Oct</a><br>
+          </div>
+        </div>
+    </section>
+    <!-- ----- End Calendar ----- -->
+
+    <!-- ----- Hika Ckan ----- -->
+    <section class="about" id="about">
+        <div class="content">
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis eos, odit nesciunt minima aliquid accusamus at magnam reiciendis nisi amet dolorem qui vel voluptates pariatur, veritatis molestiae explicabo autem!</p>
+            <h class="subtitle">HIKA CHAN</h2>
+          </div>
+    </section>
+    <!-- ----- End Hika Chan ----- -->
+    
+    <!-- ----- Suscribirse ----- -->
+    <section class="section" id="suscribe">
+        <div class="content">
+            <h class="subtitle">SUSCRIBIRSE</h2>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis eos, odit nesciunt minima aliquid accusamus at magnam reiciendis nisi amet dolorem qui vel voluptates pariatur, veritatis molestiae explicabo autem!</p>
+            <form>
+              <input type="text" class="button-big-white">
+              <input type="submit" class="button-big-black" value="SUSCRIRSE">
+            </form>
+        </div>
+      </section>
+    <!-- ----- Fin de Suscribirse ----- -->
+
+    <!-- ----- Footer ----- -->
+    <section class="section-black" id="calendar">
+      <div class="rect-container">
+        <div class="rectangle">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+        </div>
+        <div class="rectangle">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+        </div>
+        <div class="rectangle">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum ex accusamus dicta omnis aspernatur</p>
+        </div>
+      </div>
+    </section>
+    <!-- ----- End Footer ----- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+</body>
+</html>
